@@ -48,7 +48,7 @@
 				<td width="30%">
 					<div align="center">
 						<br/><br/>
-						<a href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">
+						<a href="../Build/Build.php" onmouseover="mouseOver()" onmouseout="mouseOut()">
 						<img alt="Game Start!" src="../image/StartButton1.png" id="startButton" style="height: 235px; width: 210px;"/>
 						</a>
 					</div>

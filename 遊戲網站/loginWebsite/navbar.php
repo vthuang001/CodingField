@@ -10,7 +10,7 @@
 					
 					<?php
 					if(!isset($_SESSION['account']))
-						echo "<li><a href="."sign_start.php"."><span class='glyphicon glyphicon-user'></span> 帳號登記 </a></li>";
+						echo "<li><a href="."sign_start.php"."><span class='glyphicon glyphicon-user'></span> 帳號註冊 </a></li>";
 					else
 					{
 						echo "<li><a class="."dropdown-toggle"." data-toggle="."dropdown"." href="."#"."><span class='glyphicon glyphicon-user'></span> 我的帳戶";
