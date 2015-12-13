@@ -6,6 +6,9 @@ public class Catalog : MonoBehaviour {
 	public GameObject CatalogObject;
     public GameObject GiftObject;
     public GameObject ExitObject;
+    public GameObject UpArrow;
+    public GameObject DownArrow;
+
     // Use this for initialization
     void Start () {
 		
@@ -23,12 +26,16 @@ public class Catalog : MonoBehaviour {
             CatalogObject.SetActive(false);
             GiftObject.SetActive(true);
             ExitObject.SetActive(true);
+            UpArrow.SetActive(false);
+            DownArrow.SetActive(true);
         }
         else
         {
             CatalogObject.SetActive(true);
             GiftObject.SetActive(false);
             ExitObject.SetActive(false);
+            UpArrow.SetActive(true);
+            DownArrow.SetActive(false);
         }
 	}
 }

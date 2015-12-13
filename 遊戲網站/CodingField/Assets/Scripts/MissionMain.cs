@@ -3,9 +3,12 @@ using System.Collections;
 
 public class MissionMain : MonoBehaviour {
 	
-	public GameObject MossionMainObject;
-	// Use this for initialization
-	void Start () {
+	public GameObject MissionMainObject;
+    public GameObject ButtonActive;
+    public GameObject ButtonInactive;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -16,11 +19,15 @@ public class MissionMain : MonoBehaviour {
 	
 	public void appear()
 	{
-		MossionMainObject.SetActive (true);
-	}
+		MissionMainObject.SetActive (true);
+        ButtonActive.SetActive(true);
+        ButtonInactive.SetActive(false);
+    }
 	
 	public void disappear()
 	{
-		MossionMainObject.SetActive (false);
-	}
+		MissionMainObject.SetActive (false);
+        ButtonActive.SetActive(false);
+        ButtonInactive.SetActive(true);
+    }
 }

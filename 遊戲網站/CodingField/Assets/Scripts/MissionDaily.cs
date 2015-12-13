@@ -3,9 +3,12 @@ using System.Collections;
 
 public class MissionDaily : MonoBehaviour {
 	
-	public GameObject MossionDailyObject;
-	// Use this for initialization
-	void Start () {
+	public GameObject MissionDailyObject;
+    public GameObject ButtonActive;
+    public GameObject ButtonInactive;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -13,14 +16,18 @@ public class MissionDaily : MonoBehaviour {
 	void Update () {
 		
 	}
-	
-	public void appear()
-	{
-		MossionDailyObject.SetActive (true);
-	}
-	
-	public void disappear()
-	{
-		MossionDailyObject.SetActive (false);
-	}
+
+    public void appear()
+    {
+        MissionDailyObject.SetActive(true);
+        ButtonActive.SetActive(true);
+        ButtonInactive.SetActive(false);
+    }
+
+    public void disappear()
+    {
+        MissionDailyObject.SetActive(false);
+        ButtonActive.SetActive(false);
+        ButtonInactive.SetActive(true);
+    }
 }
